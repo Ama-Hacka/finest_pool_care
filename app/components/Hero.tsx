@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative h-[870px] flex items-center overflow-hidden">
@@ -23,9 +25,12 @@ export default function Hero() {
             estates. Serenity, delivered weekly.
           </p>
           <div className="flex flex-col sm:flex-row gap-stack-md">
-            <button className="bg-primary text-on-primary px-stack-lg py-4 rounded-lg font-label-bold text-label-bold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all">
+            <Link
+              href="/booking"
+              className="bg-primary text-on-primary px-stack-lg py-4 rounded-lg font-label-bold text-label-bold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all text-center"
+            >
               Book Now for Free Estimate
-            </button>
+            </Link>
             <button className="flex items-center justify-center gap-stack-sm border-2 border-secondary text-secondary px-stack-lg py-4 rounded-lg font-label-bold text-label-bold hover:bg-secondary/5 transition-all">
               <span className="material-symbols-outlined">play_circle</span>
               Watch Our Standard
